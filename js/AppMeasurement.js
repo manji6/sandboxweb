@@ -1,19 +1,22 @@
 
 var s_omni = s_gi("swdappfogwpdev");
 
+s_omni.visitor = Visitor.getInstance("9931097853514DDC0A490D4C@AdobeOrg");
+
 s_omni.getPersistQueryParamID=new Function("param",""
-+"var s=this;console.log(s);var id=s.Util.getQueryParam(param);if(id){var d=new Date"
++"var s=this;var id=s.Util.getQueryParam(param);if(id){var d=new Date"
 +";d.setFullYear(d.getFullYear()+2);s.Util.cookieWrite('app_'+param,i"
 +"d,d);}if(!id){id=s.Util.cookieRead('app_'+param);}return id;");
 
-
-s_omni.visitor = Visitor.getInstance("9931097853514DDC0A490D4C@AdobeOrg");
+/*
 if (s_omni.visitor) {
     s_omni.visitor.setMarketingCloudVisitorID(s_omni.getPersistQueryParamID("mid"));
     if (s_omni.getPersistQueryParamID("aid")) {
         s_omni.visitor.setAnalyticsVisitorID(s_omni.getPersistQueryParamID("aid"));
     }
 }
+*/
+
 
 /* Plugin Config */
 s_omni.debugTracking = true;
