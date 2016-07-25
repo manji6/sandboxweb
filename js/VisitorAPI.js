@@ -37,3 +37,15 @@ Array&&d.ibs.length&&(this.G=i);if(!a.idSyncDisable3rdPartySyncing&&(this.G||a.l
 a.ma();a.cookieDomain==l.location.hostname&&(a.cookieDomain="");a.loadSSL=0<=l.location.protocol.toLowerCase().indexOf("https");a.loadTimeout=500;a.marketingCloudServer=a.audienceManagerServer="dpm.demdex.net";if(s&&"object"==typeof s){for(var C in s)!Object.prototype[C]&&(a[C]=s[C]);a.idSyncContainerID=a.idSyncContainerID||0;a.f();C=a.b(D);var F=Math.ceil((new Date).getTime()/u.N);!a.idSyncDisableSyncs&&t.ua(C,F)&&(a.l(p,-1),a.c(D,F));a.getMarketingCloudVisitorID();a.getAudienceManagerLocationHint();
 a.getAudienceManagerBlob()}if(!a.idSyncDisableSyncs){t.va();E.Y(window,"load",function(){var d=t;j.ga=i;!a.idSyncDisable3rdPartySyncing&&(d.G||a.la)&&d.e&&"nosubdomainreturned"!==d.e&&d.url&&!d.L&&d.Z()});try{a.X.J(function(a){t.J(a.data)},t.H)}catch(G){}}}Visitor.getInstance=function(m,s){var a,l=window.s_c_il,j;0>m.indexOf("@")&&(m+="@AdobeOrg");if(l)for(j=0;j<l.length;j++)if((a=l[j])&&"Visitor"==a._c&&a.marketingCloudOrgID==m)return a;return new Visitor(m,s)};
 (function(){function m(){s.ga=a}var s=window.Visitor,a=s.ja;a||(a=!0);window.addEventListener?window.addEventListener("load",m):window.attachEvent&&window.attachEvent("onload",m)})();
+
+
+
+var visitor = Visitor.getInstance("9931097853514DDC0A490D4C@AdobeOrg", {
+trackingServer: "rsawadasj.sc.omtrdc.net", // same as s.trackingServer
+trackingServerSecure: "rsawadasj.sc.omtrdc.net" // same as s.trackingServerSecure
+
+// To enable CNAME support, add the following configuration variables
+// If you are not using CNAME, DO NOT include these variables
+// marketingCloudServer: "INSERT-TRACKING-SERVER-HERE",
+// marketingCloudServerSecure: "INSERT-SECURE-TRACKING-SERVER-HERE" // same as s.trackingServerSecure
+});
